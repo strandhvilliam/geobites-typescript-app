@@ -1,0 +1,87 @@
+@use "variables" as var;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: var.$color-dark--1;
+  font-weight: 400;
+  line-height: 1.6;
+  height: 100vh;
+  overscroll-behavior-y: none;
+
+  background-color: var.$color-light--3;
+  padding: 2.5rem;
+
+  display: flex;
+}
+
+input, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+  line-height: inherit;
+}
+
+li {
+  list-style-type: none;
+}
+
+a:link,
+a:visited {
+  color: var.$color-dark--1;
+}
+
+button {
+  font-family: inherit;
+}
+
+.btn {
+
+  padding: 0.6rem;
+  border: 0;
+  border-radius: 5px;
+  color: var.$color-dark--1;
+  font-size: 1.4rem;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  z-index: 4;
+}
+
+.btn:hover {
+  background-color: var.$color-light--2;
+}
+
+.btn:focus {
+  outline: none;
+  background: transparent;
+}
+
+.btn:active {
+    background-color: var.$color-light--1;
+}
+
+.btn--edit, .btn--delete {
+  opacity: 1;
+}
+
+.btn--edit.hidden, .btn--delete.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.search_hidden {
+  display: none;
+}

@@ -1,0 +1,181 @@
+@use "variables" as var;
+
+.sidebar {
+  flex-basis: 60rem;
+  background-color: var.$color-light--3;
+  padding: 0 4rem 4rem 4rem;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    //gap: 4rem;
+  }
+
+  &__logo {
+    width: 50%;
+    cursor: pointer;
+  }
+
+  &__map-btn{
+    font-size: 3rem;
+    color: var.$color-dark--1;
+    //width: 100%;
+    padding: 1rem;
+    border: 1px solid var.$color-dark--1;
+    display: none;
+  }
+
+
+
+  &__map-btn i.hidden {
+    display: none;
+  }
+
+  &__controls {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    margin: 0;
+    padding: 1rem;
+    z-index: 8000;
+
+  }
+
+
+  &__categories {
+    z-index: 8000;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    flex-direction: column;
+    gap: 1.6rem;
+    border: 1px solid var.$color-dark--1;
+    border-radius: 5px;
+    background-color: var.$color-light--3;
+    height: auto;
+    max-height: 30rem;
+    padding: 2rem;
+    margin: 0 1rem 0 1rem;
+    transition: all 0.2s ease-in-out;
+    transform: scaleY(1);
+    transform-origin: top;
+
+  }
+
+
+  &__categories.hidden {
+    visibility: hidden;
+    padding: 0 2rem;
+    max-height: 0;
+    transform: scaleY(0);
+    border: 0;
+    margin: 0;
+
+  }
+
+
+  &__sort-options {
+    position: relative;
+    z-index: 8000;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    border: 1px solid var.$color-dark--1;
+    border-radius: 5px;
+    background-color: var.$color-light--3;
+    height: auto;
+    max-height: 30rem;
+    padding: 2rem;
+    margin: 0 1rem 0 1rem;
+    transition: all 0.2s ease-in-out;
+    transform: scaleY(1);
+    transform-origin: top;
+
+  }
+
+  &__sort-options.hidden {
+    border: 0;
+    visibility: hidden;
+    max-height: 0;
+    margin: 0;
+    padding: 0 2rem;
+    transform: scaleY(0);
+  }
+
+  &__search-bar {
+    width: 50%;
+    height: 100%;
+    padding: 1rem 0 1rem 4rem;
+    background-color: var.$color-light--3;
+    border: 1px solid var.$color-dark--1;
+    border-radius: 4px;
+    color: var.$color-dark--1;
+    background-image: url("../img/magnifying-glass-solid.svg");
+    background-repeat: no-repeat;
+    background-size: 1.6rem;
+    background-position: left 1rem center;
+    font-size: 1.4rem;
+  }
+
+  ::placeholder {
+    color: var.$color-dark--1;
+  }
+
+  &__search-bar:focus {
+    outline: none;
+  }
+
+  &__search-bar::placeholder {
+    font-size: 1.4rem;
+  }
+
+
+  &__btn {
+    width: 25%;
+    height: 100%;
+    padding: 1rem 0;
+
+    background-color: var.$color-light--3;
+    border: 1px solid var.$color-dark--1;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var.$color-dark--1;
+    font-size: 1.4rem;
+
+  }
+
+  &__btn i {
+    font-size: 1.6rem;
+  }
+
+
+}
+
+
+.category {
+
+  &__item {
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.2rem;
+  }
+
+  &__img {
+    width: 2rem;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
+}

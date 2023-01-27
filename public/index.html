@@ -1,27 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Web site created using create-snowpack-app" />
-    <link rel="stylesheet" type="text/css" href="/index.css" />
-    <title>Snowpack App</title>
-  </head>
-  <body>
-    <img id="img" src="/logo.svg" />
-    <canvas id="canvas"></canvas>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <script type="module" src="/dist/index.js"></script>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+<html lang='en'>
+<head>
+  <meta charset='utf-8' />
+  <meta name='viewport' content='width=device-width, initial-scale=1' />
+  <link rel='stylesheet' type='text/css' href='css/main.css' />
+  <script type='module' src='dist/index.js'></script>
+  <title>Snowpack App</title>
+</head>
+<body>
+<noscript>You need to enable JavaScript to run this app.</noscript>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+<section class='sidebar'>
+  <div class='sidebar__header'>
+      <img class='sidebar__logo' src='img/geobites-logo.svg' alt='logo'>
+      <button class='sidebar__map-btn btn' type='button'><i class="fa-regular fa-map hidden"></i><i class="fa-regular fa-rectangle-list"></i></button>
+  </div>
+  <div class='sidebar__controls'>
+    <input class='sidebar__search-bar' type='text' placeholder='Search'>
+    <button class='sidebar__btn sidebar__btn--category'>Category<i class='fa-solid fa-chevron-down'></i></button>
+    <button class='sidebar__btn sidebar__btn--sort'>Sort<i class='fa-solid fa-chevron-down'></i></button>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+  </div>
+  <ul class='sidebar__categories hidden'></ul>
+  <ul class='sidebar__sort-options hidden'></ul>
+
+
+  <form class='form hidden' id='main-form'></form>
+
+  <ul class='list'></ul>
+</section>
+
+<section class='map' id='map'></section>
+</body>
 </html>

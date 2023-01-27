@@ -1,0 +1,132 @@
+{
+  "0": {
+    "id": 0,
+    "title": "Asian",
+    "tags": [
+      "chinese",
+      "rice",
+      "food",
+      "noodles",
+      "asian"
+    ],
+    "url": "https://cdn-icons-png.flaticon.com/512/1531/1531334.png"
+  },
+  "1": {
+    "id": 1,
+    "title": "BBQ",
+    "tags": [
+      "bbq",
+      "food",
+      "meat",
+      "grill",
+      "barbecue"
+    ],
+    "url": "https://cdn-icons-png.flaticon.com/512/3268/3268430.png"
+  },
+  "2": {
+    "id": 2,
+    "title": "Beer",
+    "tags": [
+      "bar",
+      "pub",
+      "beer"
+    ],
+    "url": "https://cdn-icons-png.flaticon.com/512/3728/3728021.png"
+  },
+  "3": {
+    "id": 3,
+    "title": "Coffee",
+    "tags": [
+      "cafe",
+      "coffee",
+      "tea",
+      "take-away",
+      "takeaway",
+      "starbucks",
+      "espresso",
+      "cappuccino",
+      "latte",
+      "mocha",
+      "frappuccino"
+    ],
+    "url": "https://cdn-icons-png.flaticon.com/512/3361/3361122.png"
+  },
+  "4": {
+    "id": 4,
+    "title": "Indian",
+    "tags": [
+      "indian",
+      "curry",
+      "tandoori",
+      "tandoor",
+      "tandoori chicken",
+      "chicken"
+    ],
+    "url": "https://cdn-icons-png.flaticon.com/512/510/510100.png"
+  },
+  "5": {
+    "id": 5,
+    "title": "Pizza",
+    "tags": [
+      "pizza",
+      "italian",
+      "italy",
+      "pizzeria",
+      "pizzeria"
+    ],
+    "url": "https://cdn-icons-png.flaticon.com/512/3595/3595455.png"
+  },
+  "6": {
+    "id": 6,
+    "title": "Sandwich",
+    "tags": [
+      "sandwich",
+      "sub",
+      "subway"
+    ],
+    "url": "https://cdn-icons-png.flaticon.com/512/546/546776.png"
+  },
+  "7": {
+    "id": 7,
+    "title": "Restaurant",
+    "tags": [
+      "restaurant",
+      "food",
+      "eat",
+      "dine",
+      "dining",
+      "dinner",
+      "lunch",
+      "breakfast"
+    ],
+    "url": "https://cdn-icons-png.flaticon.com/512/2546/2546026.png"
+  },
+
+  "8": {
+    "id": 8,
+    "title": "Taco",
+    "tags": [
+      "taco",
+      "mexican",
+      "burrito",
+      "tortilla",
+      "tacos",
+      "mexican"
+    ],
+    "url": "https://cdn-icons-png.flaticon.com/512/537/537345.png"
+  },
+  "9": {
+    "id": 9,
+    "title": "Vegetables",
+    "tags": [
+      "vegetables",
+      "veggies",
+      "veggie",
+      "vegan",
+      "salad",
+      "salads",
+      "vegetarian"
+    ],
+    "url": "https://cdn-icons-png.flaticon.com/512/1057/1057357.png"
+  }
+}

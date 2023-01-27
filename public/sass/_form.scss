@@ -1,0 +1,177 @@
+@use "variables" as var;
+
+.anim {
+  transform: scaleX(1);
+
+}
+
+.form {
+  background-color: var.$color-light--1;
+  box-shadow: 1px 2px 4px hsl(0, 0%, 73%);
+  border-radius: 5px;
+  border: 1px solid var.$color-light--2;
+  padding: 1.5rem 2.25rem;
+  margin: 0 1rem 1.75rem 1rem;
+  position: relative;
+
+
+  height: 40rem;
+
+  transition: all 0.2s ease-in-out;
+
+  &--edit {
+    transition: all 0.2s ease-in-out;
+    height: auto;
+    opacity: 0;
+  }
+
+  &__anim--active {
+    opacity: 1;
+  }
+
+  &__container {
+    padding: 0 1.25rem;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    width: 100%;
+    justify-content: center;
+  }
+
+  &__row--rating {
+    display: flex;
+    gap: 1rem;
+  }
+
+  &__group {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 0.3rem 1.1rem;
+    overflow: hidden;
+
+    border: 1px solid var.$color-light--2;
+    border-radius: 3px;
+    background-color: var.$color-light--3;
+    transition: all 0.2s;
+    cursor: text;
+    font-size: 1.4rem;
+  }
+
+  &__icon--small {
+    min-width: 22px;
+    font-size: 1.5rem;
+    margin-right: 0.6rem;
+  }
+
+
+  &__input--number {
+    width: 5rem;
+    padding: 0.3rem 0.4rem;
+
+  }
+  &__textarea {
+    max-height: 8rem;
+
+  }
+
+  &__icon {
+    position: relative;
+  }
+
+  &__icon--overlay {
+    position: absolute;
+    opacity: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(66, 72, 77, 0.1);
+    border-radius: 3px;
+    cursor: pointer;
+    color: var.$color-dark--1;
+    font-size: 3rem;
+  }
+
+  &__icon:hover &__icon--overlay {
+    opacity: 1;
+  }
+
+
+
+
+  &__buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0 0 0;
+  }
+
+  &__btn {
+    padding: 0.8rem 1.5rem;
+    border: 1px solid var.$color-light--2;
+    border-radius: 5px;
+    background-color: var.$color-light--3;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+
+  &__btn--save {
+    background-color: var.$color-brand--1;
+    color: var.$color-light--1;
+    border: 1px solid var.$color-brand--1;
+  }
+
+    &__btn--save:hover {
+      background-color: #983636;
+      border: 1px solid #983636;
+
+    }
+
+
+
+  &__btn:hover {
+    background-color: var.$color-light--2;
+  }
+}
+
+.btn--confirm {
+  background-color: var.$color-brand--1;
+  color: var.$color-light--1;
+  border: 1px solid var.$color-brand--1;
+}
+
+.btn--confirm:hover {
+  background-color: #983636;
+  border: 1px solid #983636;
+}
+
+.form.hidden {
+  overflow: hidden;
+  height: 0;
+  visibility: hidden;
+  //position: absolute;
+  padding: 0 1.25rem;
+  margin: 0 2.25rem;
+}
+
+.form.hidden > .form__container {
+}
