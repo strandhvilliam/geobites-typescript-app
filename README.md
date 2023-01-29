@@ -1,7 +1,5 @@
 # GeoBites
 
-
-### Description
 GeoBites: Your Personal Restaurant Map!
 
 As a Java developer, I wanted to try my hand at creating a front-end project using TypeScript. GeoBites is a restaurant tracking app that allows you to navigate a map and pin locations of restaurants you have visited, along with ratings, descriptions, and more.
@@ -31,7 +29,11 @@ This project was built as a practical exercise after completing Jonas Schmedtman
 - Automatically calculates position based on current position
 
 ## Screenshots
-![image](https://user-images.githubusercontent.com/87245022/215325912-79e15e62-ed2b-40a0-8e13-396c11750c60.png)
+![geobites-demo-gif](https://user-images.githubusercontent.com/87245022/215340152-c3baaf2e-a65b-4caa-87cb-b477c84a496f.gif)
+
+
+![geobites-mobile](https://user-images.githubusercontent.com/87245022/215351426-2b1f96fe-830e-4bb5-9961-1bbf858eb3c3.png)
+
 
 
 ## Acknowledgements
