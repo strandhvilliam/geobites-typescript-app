@@ -1,4 +1,4 @@
-import L, { latLng, LeafletEvent, LeafletEventHandlerFn, LeafletMouseEvent, LeafletMouseEventHandlerFn } from 'leaflet';
+import L, { LeafletMouseEventHandlerFn } from 'leaflet';
 import standardMarker from '../../public/img/standard-marker.png';
 import userMarker from '../../public/img/user-marker.png';
 import type { Article } from '../model/article';

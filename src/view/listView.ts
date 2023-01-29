@@ -102,8 +102,9 @@ export class ListView implements View<Article> {
             originalArticle.insertAdjacentHTML('afterend', markup);
             originalArticle.remove();
         }
+        const editedArticle = this.parent.querySelector(`.article__item[data-id="${model.id}"]`);
+        editedArticle?.querySelector('.btn--show')?.addEventListener('click', this.toggleInfo);
 
-        document.querySelector('.btn--show')?.addEventListener('click', this.toggleInfo);
     }
 
     delete(id: number): void {
