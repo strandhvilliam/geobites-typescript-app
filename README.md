@@ -1,24 +1,39 @@
-# New Project
+# GeoBites
 
-> ✨ Bootstrapped with Create Snowpack App (CSA).
 
-## Available Scripts
+## Description
+GeoBites: Your Personal Restaurant Map!
 
-### npm start
+As a Java developer, I wanted to try my hand at creating a front-end project using TypeScript. GeoBites is a restaurant tracking app that allows you to navigate a map and pin locations of restaurants you have visited, along with ratings, descriptions, and more.
 
-Runs the app in the development mode.
-Open http://localhost:8080 to view it in the browser.
+This project was built as a practical exercise after completing Jonas Schmedtmann's course "The Complete JavaScript Course 2023: From Zero to Expert!" on Udemy. It was inspired by his "mapty-app" idea, but the code has been heavily modified and differs greatly in structure, execution, and language (TypeScript instead of JavaScript).
 
-The page will reload if you make edits.
-You will also see any lint errors in the console.
 
-### npm run build
 
-Builds a static copy of your site to the `build/` folder.
-Your app is ready to be deployed!
+### Technologies Used
+- Typescript 4.9.4
+- Node.js (for npm etc)
+- SASS extension for CSS
+- [Snowpack](https://www.snowpack.dev/) as package bundler
+- [Leaflet](https://leafletjs.com/) library for interactive map
+- [OpenStreetMap](https://www.openstreetmap.org/) providing the map data
+- [Nominatin OSM](https://nominatim.org/) for reverse geocoding
+- [Icons8](https://icons8.com/) for icons
+- [Font Awesome](https://fontawesome.com/icons) for icons
 
-**For the best production performance:** Add a build bundler plugin like [@snowpack/plugin-webpack](https://github.com/snowpackjs/snowpack/tree/main/plugins/plugin-webpack) or [snowpack-plugin-rollup-bundle](https://github.com/ParamagicDev/snowpack-plugin-rollup-bundle) to your `snowpack.config.mjs` config file.
 
-### Q: What about Eject?
+### Features and Usage
+- User may interact with a map to create and view markers with locations of restaurants
+- The sidebar menu display articles including information, rating etc.
+- User may edit the information, change icon or delete item
+- The data is stored locally in the browser and is available after reload
+- It is possible to filter and search articles in the list
+- Automatically calculates position based on current position
 
-No eject needed! Snowpack guarantees zero lock-in, and CSA strives for the same.
+### Screenshots
+![image](https://user-images.githubusercontent.com/87245022/215325912-79e15e62-ed2b-40a0-8e13-396c11750c60.png)
+
+
+### Acknowledgements
+**Jonas Schmedtmann**
+Project ideas are based from his Udemy course "[The Complete JavaScript Course 2023: From Zero to Expert!](https://www.udemy.com/course/the-complete-javascript-course/)". Specifically the projects: mapty-app and forkify. For this reason I cannot claim total copyright of the code. Although it is heavily modified, built upon and written with typescript.
