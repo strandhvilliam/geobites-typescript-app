@@ -1,7 +1,7 @@
 # GeoBites
 
 
-## Description
+### Description
 GeoBites: Your Personal Restaurant Map!
 
 As a Java developer, I wanted to try my hand at creating a front-end project using TypeScript. GeoBites is a restaurant tracking app that allows you to navigate a map and pin locations of restaurants you have visited, along with ratings, descriptions, and more.
@@ -10,7 +10,7 @@ This project was built as a practical exercise after completing Jonas Schmedtman
 
 
 
-### Technologies Used
+## Technologies Used
 - Typescript 4.9.4
 - Node.js (for npm etc)
 - SASS extension for CSS
@@ -22,7 +22,7 @@ This project was built as a practical exercise after completing Jonas Schmedtman
 - [Font Awesome](https://fontawesome.com/icons) for icons
 
 
-### Features and Usage
+## Features and Usage
 - User may interact with a map to create and view markers with locations of restaurants
 - The sidebar menu display articles including information, rating etc.
 - User may edit the information, change icon or delete item
@@ -30,10 +30,10 @@ This project was built as a practical exercise after completing Jonas Schmedtman
 - It is possible to filter and search articles in the list
 - Automatically calculates position based on current position
 
-### Screenshots
+## Screenshots
 ![image](https://user-images.githubusercontent.com/87245022/215325912-79e15e62-ed2b-40a0-8e13-396c11750c60.png)
 
 
-### Acknowledgements
+## Acknowledgements
 **Jonas Schmedtmann**
 Project ideas are based from his Udemy course "[The Complete JavaScript Course 2023: From Zero to Expert!](https://www.udemy.com/course/the-complete-javascript-course/)". Specifically the projects: mapty-app and forkify. For this reason I cannot claim total copyright of the code. Although it is heavily modified, built upon and written with typescript.
